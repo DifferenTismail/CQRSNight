@@ -1,0 +1,16 @@
+﻿@model CQRSNight.CQRSDesignPattern.Results.CategoryResults.GetCategoryByIdQueryResult
+@{
+    ViewData["Title"] = "UpdateCategory";
+}
+<link href="~lib\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet" />
+<div class="container mb-4">
+    <form method="post">
+        <input type="hidden" asp-for="CategoryId"/>
+        <label>Kategori Adı</label>
+        <input type="text" asp-for="CategoryName" class="mb-2 form-control" />
+
+        <button class="btn btn-info">Kaydet</button>
+    </form>
+</div>
+
+

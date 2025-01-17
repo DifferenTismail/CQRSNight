@@ -1,0 +1,27 @@
+﻿@model List<CQRSNight.CQRSDesignPattern.Results.CategoryResults.GetCategoryQueryResult>
+@{
+    ViewData["Title"] = "CategoryList";
+}
+<link href="~lib\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mb-3">
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>#</th>
+            <th>Kategori Adı</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>@item.CategoryId</td>
+                <td>@item.CategoryName</td>
+                <td><a class="btn btn-danger" href="/Categories/DeleteCategory/@item.CategoryId">Sil</a></td>
+                <td><a class="btn btn-success" href="/Categories/UpdateCategory/@item.CategoryId">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+</div>
+<a href="/Categories/CreateCategory" class="btn btn-info">Yeni Kategori</a>
