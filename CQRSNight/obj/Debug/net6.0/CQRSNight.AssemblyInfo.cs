@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CQRSNight")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e99e6699bf50b140adaa76116ca6ad35b3159c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("CQRSNight")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CQRSNight")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
